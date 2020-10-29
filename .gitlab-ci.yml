@@ -1,7 +1,7 @@
 image: registry.gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle:v1
 
 before_script:
-  - "sed -i 's|git@gitlab.tugraz.at:|https://gitlab.tugraz.at/|g' composer.json composer.lock"
+  - "sed -i 's|git@gitlab.tugraz.at:|https://gitlab.tugraz.at/|g' composer.*"
 
 variables:
   COMPOSER_CACHE_DIR: "$CI_PROJECT_DIR/_composer_cache"
