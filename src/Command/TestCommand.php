@@ -11,6 +11,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class TestCommand extends Command
 {
+    protected static $defaultName = 'dbp:my-custom-command';
+
     public function __construct()
     {
         parent::__construct();
@@ -25,7 +27,7 @@ class TestCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $argument = $input->getArgument('argument');
-        $output->write($argument);
+        $output->writeln($argument);
 
         return 0;
     }
