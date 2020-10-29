@@ -1,0 +1,4 @@
+services:
+  DBP\API\StarterBundle\Command\TestCommand:
+    autowire: true
+    autoconfigure: true
