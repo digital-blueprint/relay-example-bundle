@@ -8,7 +8,6 @@ use ApiPlatform\Core\DataProvider\ItemDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use DBP\API\StarterBundle\Entity\Place;
 use DBP\API\StarterBundle\Service\PlaceProviderInterface;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 final class PlaceItemDataProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
@@ -27,13 +26,8 @@ final class PlaceItemDataProvider implements ItemDataProviderInterface, Restrict
     /**
      * @param array|int|string $id
      */
-    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): Place
+    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): ?Place
     {
-        $place = $this->api->getPlaceById($id);
-        if ($place === null) {
-            throw new NotFoundHttpException();
-        }
-
-        return $place;
+        return $this->api->getPlaceById($id);
     }
 }
