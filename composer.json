@@ -13,7 +13,7 @@
         "phpstan/phpstan": "^0.12.33",
         "phpstan/phpstan-phpunit": "^0.12.13",
         "symfony/phpunit-bridge": "^4.4",
-        "vimeo/psalm": "^3.12"
+        "vimeo/psalm": "^4.2.1"
     },
     "repositories": [
         {
