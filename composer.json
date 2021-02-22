@@ -6,7 +6,7 @@
         "php": "^7.3",
         "api-platform/core": "^2.5",
         "symfony/framework-bundle": "^4.1.12",
-        "dbp/api-core-bundle": "@dev"
+        "dbp/api-core-bundle": "dev-main"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",

@@ -4,85 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6bfb823a5e668874790dd79e06aefd4",
+    "content-hash": "aacafd2d2227e4937544cb12b9111f79",
     "packages": [
         {
-            "name": "adldap2/adldap2",
-            "version": "v10.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Adldap2/Adldap2.git",
-                "reference": "936a4e2eb925d005198f716a75bb78068c4de94d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/936a4e2eb925d005198f716a75bb78068c4de94d",
-                "reference": "936a4e2eb925d005198f716a75bb78068c4de94d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-ldap": "*",
-                "illuminate/contracts": "~5.0|~6.0|~7.0|~8.0",
-                "php": ">=7.0",
-                "psr/log": "~1.0",
-                "psr/simple-cache": "~1.0",
-                "tightenco/collect": "~5.0|~6.0|~7.0|~8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~6.0|~7.0|~8.0"
-            },
-            "suggest": {
-                "ext-fileinfo": "fileinfo is required when retrieving user encoded thumbnails"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Adldap\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman@outlook.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A PHP LDAP Package for humans.",
-            "keywords": [
-                "active directory",
-                "ad",
-                "adLDAP",
-                "adldap2",
-                "directory",
-                "ldap",
-                "windows"
-            ],
-            "support": {
-                "docs": "https://github.com/Adldap2/Adldap2/blob/master/readme.md",
-                "email": "steven_bauman@outlook.com",
-                "issues": "https://github.com/Adldap2/Adldap2/issues",
-                "source": "https://github.com/Adldap2/Adldap2"
-            },
-            "time": "2020-09-09T12:55:51+00:00"
-        },
-        {
             "name": "api-platform/core",
-            "version": "v2.6.2",
+            "version": "v2.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "2edb3bf1fffe57f1d5e6833e25e7b0b54dd7a583"
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/2edb3bf1fffe57f1d5e6833e25e7b0b54dd7a583",
-                "reference": "2edb3bf1fffe57f1d5e6833e25e7b0b54dd7a583",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/908dafa251fc532cb2c3673318b4ac4a6438f9da",
+                "reference": "908dafa251fc532cb2c3673318b4ac4a6438f9da",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +29,7 @@
                 "symfony/http-foundation": "^4.4 || ^5.1",
                 "symfony/http-kernel": "^4.4 || ^5.1",
                 "symfony/property-access": "^3.4.19 || ^4.4 || ^5.1",
-                "symfony/property-info": "^3.4 || ^4.4 || ^5.2.1",
+                "symfony/property-info": "^3.4 || ^4.4 || ^5.1",
                 "symfony/serializer": "^4.4 || ^5.1",
                 "symfony/web-link": "^4.4 || ^5.1",
                 "willdurand/negotiation": "^2.0.3 || ^3.0"
@@ -124,7 +59,7 @@
                 "phpdocumentor/reflection-docblock": "^3.0 || ^4.0 || ^5.1",
                 "phpdocumentor/type-resolver": "^0.3 || ^0.4 || ^1.4",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.65",
+                "phpstan/phpstan": "^0.12.53@dev",
                 "phpstan/phpstan-doctrine": "^0.12.7",
                 "phpstan/phpstan-phpunit": "^0.12.4",
                 "phpstan/phpstan-symfony": "^0.12.4",
@@ -166,7 +101,6 @@
                 "doctrine/mongodb-odm-bundle": "To support MongoDB. Only versions 4.0 and later are supported.",
                 "elasticsearch/elasticsearch": "To support Elasticsearch.",
                 "guzzlehttp/guzzle": "To use the HTTP cache invalidation system.",
-                "ocramius/package-versions": "To display the API Platform's version in the debug bar.",
                 "phpdocumentor/reflection-docblock": "To support extracting metadata from PHPDoc.",
                 "psr/cache-implementation": "To use metadata caching.",
                 "ramsey/uuid": "To support Ramsey's UUID identifiers.",
@@ -175,14 +109,13 @@
                 "symfony/expression-language": "To use authorization features.",
                 "symfony/security": "To use authorization features.",
                 "symfony/twig-bundle": "To use the Swagger UI integration.",
-                "symfony/uid": "To support Symfony UUID/ULID identifiers.",
                 "symfony/web-profiler-bundle": "To use the data collector.",
                 "webonyx/graphql-php": "To support GraphQL."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.7.x-dev"
+                    "dev-master": "2.5.x-dev"
                 },
                 "symfony": {
                     "require": "^3.4 || ^4.4 || ^5.1"
@@ -219,7 +152,7 @@
             ],
             "support": {
                 "issues": "https://github.com/api-platform/core/issues",
-                "source": "https://github.com/api-platform/core/tree/v2.6.2"
+                "source": "https://github.com/api-platform/core/tree/v2.5.10"
             },
             "funding": [
                 {
@@ -227,7 +160,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-07T14:18:49+00:00"
+            "time": "2021-01-22T10:36:37+00:00"
         },
         {
             "name": "brick/math",
@@ -291,16 +224,14 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-core-bundle.git",
-                "reference": "531f0d230f2bd263c3129c1a227cfe078bd7e3f7"
+                "reference": "db2c221338c234b762192da66bf9d9f33b4e2662"
             },
             "require": {
-                "adldap2/adldap2": "^10.0",
-                "api-platform/core": "^2.5",
+                "api-platform/core": "<2.6",
                 "doctrine/annotations": "^1.0",
-                "ext-simplexml": "*",
+                "ext-json": "*",
                 "guzzlehttp/guzzle": "^7.0",
                 "kevinrob/guzzle-cache-middleware": "^3.3",
-                "league/uri": "^6.3",
                 "monolog/monolog": "^1.4||^2.1",
                 "nelmio/cors-bundle": "^2.1.0",
                 "php": "^7.3",
@@ -369,20 +300,20 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "time": "2021-02-15T09:58:39+00:00"
+            "time": "2021-02-22T10:43:38+00:00"
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.11.1",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b17c5014ef81d212ac539f07a1001832df1b6d3b",
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b",
                 "shasum": ""
             },
             "require": {
@@ -397,11 +328,6 @@
                 "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
@@ -442,9 +368,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+                "source": "https://github.com/doctrine/annotations/tree/1.12.1"
             },
-            "time": "2020-10-26T10:28:16+00:00"
+            "time": "2021-02-21T21:00:45+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -990,54 +916,6 @@
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
-            "name": "illuminate/contracts",
-            "version": "v8.27.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/contracts.git",
-                "reference": "b91459a9a0bd0de204c3cae6859ebd02dbcee6c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/b91459a9a0bd0de204c3cae6859ebd02dbcee6c6",
-                "reference": "b91459a9a0bd0de204c3cae6859ebd02dbcee6c6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3|^8.0",
-                "psr/container": "^1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Contracts\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Contracts package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "time": "2021-01-20T14:18:13+00:00"
-        },
-        {
             "name": "kevinrob/guzzle-cache-middleware",
             "version": "v3.3.1",
             "source": {
@@ -1118,168 +996,6 @@
                 "source": "https://github.com/Kevinrob/guzzle-cache-middleware/tree/v3.3.1"
             },
             "time": "2020-02-14T11:17:02+00:00"
-        },
-        {
-            "name": "league/uri",
-            "version": "6.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/uri.git",
-                "reference": "09da64118eaf4c5d52f9923a1e6a5be1da52fd9a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/09da64118eaf4c5d52f9923a1e6a5be1da52fd9a",
-                "reference": "09da64118eaf4c5d52f9923a1e6a5be1da52fd9a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "league/uri-interfaces": "^2.1",
-                "php": ">=7.2",
-                "psr/http-message": "^1.0"
-            },
-            "conflict": {
-                "league/uri-schemes": "^1.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^8.0 || ^9.0",
-                "psr/http-factory": "^1.0"
-            },
-            "suggest": {
-                "ext-fileinfo": "Needed to create Data URI from a filepath",
-                "ext-intl": "Needed to improve host validation",
-                "league/uri-components": "Needed to easily manipulate URI objects",
-                "psr/http-factory": "Needed to use the URI factory"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Uri\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://nyamsprod.com"
-                }
-            ],
-            "description": "URI manipulation library",
-            "homepage": "http://uri.thephpleague.com",
-            "keywords": [
-                "data-uri",
-                "file-uri",
-                "ftp",
-                "hostname",
-                "http",
-                "https",
-                "middleware",
-                "parse_str",
-                "parse_url",
-                "psr-7",
-                "query-string",
-                "querystring",
-                "rfc3986",
-                "rfc3987",
-                "rfc6570",
-                "uri",
-                "uri-template",
-                "url",
-                "ws"
-            ],
-            "support": {
-                "docs": "https://uri.thephpleague.com",
-                "forum": "https://thephpleague.slack.com",
-                "issues": "https://github.com/thephpleague/uri/issues",
-                "source": "https://github.com/thephpleague/uri/tree/6.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sponsors/nyamsprod",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-11-22T14:29:11+00:00"
-        },
-        {
-            "name": "league/uri-interfaces",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "667f150e589d65d79c89ffe662e426704f84224f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/667f150e589d65d79c89ffe662e426704f84224f",
-                "reference": "667f150e589d65d79c89ffe662e426704f84224f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Uri\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://nyamsprod.com"
-                }
-            ],
-            "description": "Common interface for URI representation",
-            "homepage": "http://github.com/thephpleague/uri-interfaces",
-            "keywords": [
-                "rfc3986",
-                "rfc3987",
-                "uri",
-                "url"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/uri-interfaces/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sponsors/nyamsprod",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-10-31T13:45:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1904,57 +1620,6 @@
                 "source": "https://github.com/php-fig/log/tree/1.1.3"
             },
             "time": "2020-03-23T09:12:05+00:00"
-        },
-        {
-            "name": "psr/simple-cache",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
-            },
-            "time": "2017-10-23T01:57:42+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5543,60 +5208,6 @@
             "time": "2021-01-27T09:09:26+00:00"
         },
         {
-            "name": "tightenco/collect",
-            "version": "v8.19.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tighten/collect.git",
-                "reference": "0c0243a0dc0b66f54d0ec409f36cd9889665b132"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tighten/collect/zipball/0c0243a0dc0b66f54d0ec409f36cd9889665b132",
-                "reference": "0c0243a0dc0b66f54d0ec409f36cd9889665b132",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2|^8.0",
-                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "nesbot/carbon": "^2.23.0",
-                "phpunit/phpunit": "^8.3"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Collect/Support/helpers.php",
-                    "src/Collect/Support/alias.php"
-                ],
-                "psr-4": {
-                    "Tightenco\\Collect\\": "src/Collect"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "Collect - Illuminate Collections as a separate package.",
-            "keywords": [
-                "collection",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/tighten/collect/issues",
-                "source": "https://github.com/tighten/collect/tree/v8.19.0"
-            },
-            "time": "2020-12-19T00:06:29+00:00"
-        },
-        {
             "name": "twig/twig",
             "version": "v3.3.0",
             "source": {
@@ -7565,7 +7176,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -7621,7 +7232,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.1"
             },
             "funding": [
                 {
