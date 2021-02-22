@@ -10,11 +10,23 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ApiResource(
- *     collectionOperations={"get"},
- *     itemOperations={"get", "put", "delete"},
+ *     collectionOperations={
+ *         "get"
+ *     },
+ *     itemOperations={
+ *         "get",
+ *         "put",
+ *         "delete"
+ *     },
  *     iri="https://schema.org/Place",
- *     normalizationContext={"groups"={"Place:output"}, "jsonld_embed_context"=true},
- *     denormalizationContext={"groups"={"Place:input"}, "jsonld_embed_context"=true}
+ *     normalizationContext={
+ *         "groups" = {"Place:output"},
+ *         "jsonld_embed_context" = true
+ *     },
+ *     denormalizationContext={
+ *         "groups" = {"Place:input"},
+ *         "jsonld_embed_context" = true
+ *     }
  * )
  */
 class Place
