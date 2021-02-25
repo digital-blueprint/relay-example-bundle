@@ -6,6 +6,7 @@ namespace DBP\API\StarterBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
+use DBP\API\StarterBundle\Controller\LoggedInOnly;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
@@ -16,7 +17,14 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     itemOperations={
  *         "get",
  *         "put",
- *         "delete"
+ *         "delete",
+ *         "loggedin_only" = {
+ *             "security" = "is_granted('IS_AUTHENTICATED_FULLY')",
+ *             "method" = "GET",
+ *             "path" = "/places/{id}/loggedin-only",
+ *             "controller" = LoggedInOnly::class,
+ *             "openapi_context" = {"summary" = "Only works when logged in."},
+ *         }
  *     },
  *     iri="https://schema.org/Place",
  *     normalizationContext={
