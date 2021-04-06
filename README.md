@@ -55,3 +55,12 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 * Run tests: `composer test`
 * Run linters: `composer run lint`
 * Run cs-fixer: `composer run cs-fix`
+
+## Bundle dependencies
+
+Don't forget you need to pull down your dependencies in your main application if you are installing packages in a bundle.
+
+```bash
+# installs dependencies from dbp/api-your-bundle
+composer update dbp/api-your-bundle
+```
