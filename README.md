@@ -30,14 +30,10 @@ features:
     ],
 ```
 
-* Add the package to as a dependency:
+* Add the bundle package as a dependency:
 
-```json
-    "require": {
-        ...
-        "dbp/api-starter-bundle": "@dev",
-        ...
-    },
+```
+composer require dbp/api-starter-bundle=dev-main
 ```
 
 * Add the bundle to your `config/bundles.php`:
@@ -48,6 +44,8 @@ DBP\API\StarterBundle\DbpStarterBundle::class => ['all' => true],
 DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 ];
 ```
+
+* Run `composer install` to clear caches
 
 ## Development & Testing
 
@@ -61,6 +59,6 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 Don't forget you need to pull down your dependencies in your main application if you are installing packages in a bundle.
 
 ```bash
-# installs dependencies from dbp/api-your-bundle
-composer update dbp/api-your-bundle
+# updates and installs dependencies from dbp/api-starter-bundle
+composer update dbp/api-starter-bundle
 ```
