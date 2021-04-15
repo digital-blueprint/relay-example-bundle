@@ -23,9 +23,6 @@ final class PlaceItemDataProvider implements ItemDataProviderInterface, Restrict
         return Place::class === $resourceClass;
     }
 
-    /**
-     * @param array|int|string $id
-     */
     public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): ?Place
     {
         return $this->api->getPlaceById($id);

@@ -21,7 +21,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *         "loggedin_only" = {
  *             "security" = "is_granted('IS_AUTHENTICATED_FULLY')",
  *             "method" = "GET",
- *             "path" = "/places/{id}/loggedin-only",
+ *             "path" = "/places/{identifier}/loggedin-only",
  *             "controller" = LoggedInOnly::class,
  *             "openapi_context" = {"summary" = "Only works when logged in."},
  *         }
