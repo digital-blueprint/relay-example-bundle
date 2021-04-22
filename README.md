@@ -47,6 +47,26 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 
 * Run `composer install` to clear caches
 
+## Configuration
+
+The bundle has a `secret_token` configuration value that you can specify in your
+app, either by hardcoding it, or by referencing an environment variable.
+
+For this create `config/packages/dbp_starter.yaml` in the app with the following
+content:
+
+```yaml
+dbp_starter:
+  secret_token: 42
+  # secret_token: '%env(SECRET_TOKEN)%'
+```
+
+The value gets read in `DbpStarterExtension` and passed when creating the
+`MyCustomService` service.
+
+For more info on bundle configuration see
+https://symfony.com/doc/current/bundles/configuration.html
+
 ## Development & Testing
 
 * Install dependencies: `composer install`
