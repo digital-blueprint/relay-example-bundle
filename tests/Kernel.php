@@ -42,5 +42,9 @@ class Kernel extends BaseKernel
         $c->loadFromExtension('framework', [
             'test' => true,
         ]);
+
+        $c->loadFromExtension('dbp_starter', [
+            'secret_token' => 'secret-test',
+        ]);
     }
 }

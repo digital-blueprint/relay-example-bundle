@@ -20,5 +20,9 @@ services:
     autowire: true
     autoconfigure: true
 
+  DBP\API\StarterBundle\Service\MyCustomService:
+    autowire: true
+    autoconfigure: true
+
   DBP\API\StarterBundle\Service\PlaceProviderInterface:
     '@DBP\API\StarterBundle\Service\ExternalApi'

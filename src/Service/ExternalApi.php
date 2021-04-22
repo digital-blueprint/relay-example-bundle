@@ -10,8 +10,10 @@ class ExternalApi implements PlaceProviderInterface
 {
     private $places;
 
-    public function __construct()
+    public function __construct(MyCustomService $service)
     {
+        $service = $service;
+
         $this->places = [];
         $place1 = new Place();
         $place1->setIdentifier('graz');
