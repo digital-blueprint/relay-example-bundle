@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.3",
         "api-platform/core": "^2.5",
-        "symfony/framework-bundle": "^4.1.12",
+        "symfony/framework-bundle": "^5.2",
         "dbp/api-core-bundle": "dev-main",
         "ext-json": "*"
     },
@@ -13,9 +13,9 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpstan/phpstan": "^0.12.33",
         "phpstan/phpstan-phpunit": "^0.12.13",
-        "symfony/browser-kit": "^4.4",
-        "symfony/http-client": "^4.4",
-        "symfony/phpunit-bridge": "^4.4",
+        "symfony/browser-kit": "^5.2",
+        "symfony/http-client": "^5.2",
+        "symfony/phpunit-bridge": "^5.2",
         "vimeo/psalm": "^4.2.1"
     },
     "repositories": [
