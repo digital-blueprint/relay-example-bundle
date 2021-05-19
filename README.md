@@ -25,7 +25,7 @@ features:
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/middleware/dbp-api/api-starter-bundle.git"
+            "url": "git@gitlab.tugraz.at:dbp/dbp-api/api-starter-bundle.git"
         }
     ],
 ```
