@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "308c094bf8156f36eb310622a9e946c5",
+    "content-hash": "c76e5d08651db2cf56dc0e1476c36797",
     "packages": [
         {
             "name": "api-platform/core",
@@ -223,17 +223,11 @@
         },
         {
             "name": "dbp/api-core-bundle",
-            "version": "dev-main",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.tugraz.at:dbp/dbp-api/api-core-bundle.git",
-                "reference": "8ab8f7ead5aa41f1378da1de16b2870b2f81b676"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.tugraz.at/api/v4/projects/dbp%2Fdbp-api%2Fapi-core-bundle/repository/archive.zip?sha=8ab8f7ead5aa41f1378da1de16b2870b2f81b676",
-                "reference": "8ab8f7ead5aa41f1378da1de16b2870b2f81b676",
-                "shasum": ""
+                "url": "https://gitlab.tugraz.at/dbp/dbp-api/api-core-bundle.git",
+                "reference": "eae0d8ef3a13b728ffb11200eccc360f450bcb12"
             },
             "require": {
                 "api-platform/core": "^2.6.3",
@@ -267,7 +261,6 @@
                 "symfony/phpunit-bridge": "^5.2",
                 "vimeo/psalm": "^4.4"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -309,10 +302,7 @@
             "license": [
                 "AGPL-3.0-or-later"
             ],
-            "support": {
-                "issues": "https://gitlab.tugraz.at/api/v4/projects/8296/issues"
-            },
-            "time": "2021-07-03T14:09:30+02:00"
+            "time": "2021-07-06T12:22:24+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -7994,9 +7984,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dbp/api-core-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
