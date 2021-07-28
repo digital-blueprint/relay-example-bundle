@@ -1,9 +1,9 @@
-# DBP API Starter Bundle
+# Relay Template Bundle
 
 This Symfony bundle can be used as a template for creating new bundles for the
-DBP API project.
+DBP Relay project.
 
-When including this bundle into your DBP API server it will gain the following
+When including this bundle into your API server it will gain the following
 features:
 
 * A custom `./bin/console` command
@@ -13,9 +13,9 @@ features:
 ## Using the Bundle as a Template
 
 * Copy the repo contents
-* Adjust the project name in `composer.json`
+* Adjust the package name in `composer.json`
 * Invent a new PHP namespace and adjust it in all PHP files
-* Rename `src/DbpStarterBundle` and `DependencyInjection/DbpStarterExtension` to match the new project name
+* Rename `src/DbpRelayTemplateBundle` and `DependencyInjection/DbpRelayTemplateExtension` to match the new project name
 
 ## Integration into the API Server
 
@@ -25,7 +25,7 @@ features:
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/dbp-api/api-starter-bundle.git"
+            "url": "git@gitlab.tugraz.at:dbp/dbp-api/dbp-relay-template-bundle.git"
         }
     ],
 ```
@@ -33,14 +33,14 @@ features:
 * Add the bundle package as a dependency:
 
 ```
-composer require dbp/api-starter-bundle=dev-main
+composer require dbp/relay-template-bundle=dev-main
 ```
 
 * Add the bundle to your `config/bundles.php`:
 
 ```php
 ...
-DBP\API\StarterBundle\DbpStarterBundle::class => ['all' => true],
+Dbp\Relay\TemplateBundle\DbpRelayTemplateBundle::class => ['all' => true],
 DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 ];
 ```
@@ -52,16 +52,16 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 The bundle has a `secret_token` configuration value that you can specify in your
 app, either by hardcoding it, or by referencing an environment variable.
 
-For this create `config/packages/dbp_starter.yaml` in the app with the following
+For this create `config/packages/dbp_relay_template.yaml` in the app with the following
 content:
 
 ```yaml
-dbp_starter:
+dbp_relay_template:
   secret_token: 42
   # secret_token: '%env(SECRET_TOKEN)%'
 ```
 
-The value gets read in `DbpStarterExtension` and passed when creating the
+The value gets read in `DbpRelayTemplateExtension` and passed when creating the
 `MyCustomService` service.
 
 For more info on bundle configuration see
@@ -79,6 +79,6 @@ https://symfony.com/doc/current/bundles/configuration.html
 Don't forget you need to pull down your dependencies in your main application if you are installing packages in a bundle.
 
 ```bash
-# updates and installs dependencies from dbp/api-starter-bundle
-composer update dbp/api-starter-bundle
+# updates and installs dependencies from dbp/relay-template-bundle
+composer update dbp/relay-template-bundle
 ```

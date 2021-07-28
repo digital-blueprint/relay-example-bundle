@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\Service;
+namespace Dbp\Relay\TemplateBundle\Service;
 
 class MyCustomService
 {

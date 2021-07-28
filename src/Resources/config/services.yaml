@@ -1,28 +1,28 @@
 services:
-  DBP\API\StarterBundle\Command\TestCommand:
+  Dbp\Relay\TemplateBundle\Command\TestCommand:
     autowire: true
     autoconfigure: true
 
-  DBP\API\StarterBundle\Controller\:
+  Dbp\Relay\TemplateBundle\Controller\:
     resource: '../../Controller'
     tags: ['controller.service_arguments']
     autowire: true
 
-  DBP\API\StarterBundle\DataProvider\PlaceCollectionDataProvider:
+  Dbp\Relay\TemplateBundle\DataProvider\PlaceCollectionDataProvider:
     tags: [{ name: 'api_platform.collection_data_provider'}]
     autowire: true
 
-  DBP\API\StarterBundle\DataProvider\PlaceItemDataProvider:
+  Dbp\Relay\TemplateBundle\DataProvider\PlaceItemDataProvider:
     tags: ['api_platform.item_data_provider']
     autowire: true
 
-  DBP\API\StarterBundle\Service\ExternalApi:
+  Dbp\Relay\TemplateBundle\Service\ExternalApi:
     autowire: true
     autoconfigure: true
 
-  DBP\API\StarterBundle\Service\MyCustomService:
+  Dbp\Relay\TemplateBundle\Service\MyCustomService:
     autowire: true
     autoconfigure: true
 
-  DBP\API\StarterBundle\Service\PlaceProviderInterface:
-    '@DBP\API\StarterBundle\Service\ExternalApi'
+  Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface:
+    '@Dbp\Relay\TemplateBundle\Service\ExternalApi'

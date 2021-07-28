@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\DataProvider;
+namespace Dbp\Relay\TemplateBundle\DataProvider;
 
 use ApiPlatform\Core\DataProvider\CollectionDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use DBP\API\CoreBundle\Helpers\ArrayFullPaginator;
-use DBP\API\StarterBundle\Entity\Place;
-use DBP\API\StarterBundle\Service\PlaceProviderInterface;
+use Dbp\Relay\TemplateBundle\Entity\Place;
+use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
 
 final class PlaceCollectionDataProvider implements CollectionDataProviderInterface, RestrictedDataProviderInterface
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\DependencyInjection;
+namespace Dbp\Relay\TemplateBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
-class DbpStarterExtension extends ConfigurableExtension
+class DbpRelayTemplateExtension extends ConfigurableExtension
 {
     public function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
@@ -23,7 +23,7 @@ class DbpStarterExtension extends ConfigurableExtension
         $loader->load('services.yaml');
 
         // Inject the config value into the MyCustomService service
-        $definition = $container->getDefinition('DBP\API\StarterBundle\Service\MyCustomService');
+        $definition = $container->getDefinition('Dbp\Relay\TemplateBundle\Service\MyCustomService');
         $definition->addArgument($mergedConfig['secret_token']);
     }
 

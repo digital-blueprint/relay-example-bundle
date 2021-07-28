@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\Service;
+namespace Dbp\Relay\TemplateBundle\Service;
 
-use DBP\API\StarterBundle\Entity\Place;
+use Dbp\Relay\TemplateBundle\Entity\Place;
 
 class ExternalApi implements PlaceProviderInterface
 {

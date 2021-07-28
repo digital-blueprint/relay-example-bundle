@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\DependencyInjection;
+namespace Dbp\Relay\TemplateBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('dbp_starter');
+        $treeBuilder = new TreeBuilder('dbp_relay_template');
 
         $treeBuilder->getRootNode()
             ->children()

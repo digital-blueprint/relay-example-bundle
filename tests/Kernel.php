@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\Tests;
+namespace Dbp\Relay\TemplateBundle\Tests;
 
 use ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle;
 use DBP\API\CoreBundle\DbpCoreBundle;
-use DBP\API\StarterBundle\DbpStarterBundle;
+use Dbp\Relay\TemplateBundle\DbpRelayTemplateBundle;
 use Nelmio\CorsBundle\NelmioCorsBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
@@ -28,7 +28,7 @@ class Kernel extends BaseKernel
         yield new TwigBundle();
         yield new NelmioCorsBundle();
         yield new ApiPlatformBundle();
-        yield new DbpStarterBundle();
+        yield new DbpRelayTemplateBundle();
         yield new DbpCoreBundle();
     }
 
@@ -44,7 +44,7 @@ class Kernel extends BaseKernel
             'secret' => '',
         ]);
 
-        $c->loadFromExtension('dbp_starter', [
+        $c->loadFromExtension('dbp_relay_template', [
             'secret_token' => 'secret-test',
         ]);
     }

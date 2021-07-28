@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle\DataPersister;
+namespace Dbp\Relay\TemplateBundle\DataPersister;
 
 use ApiPlatform\Core\DataPersister\DataPersisterInterface;
-use DBP\API\StarterBundle\Entity\Place;
-use DBP\API\StarterBundle\Service\PlaceProviderInterface;
+use Dbp\Relay\TemplateBundle\Entity\Place;
+use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
 
 class PlaceDataPersister implements DataPersisterInterface
 {

@@ -1,5 +1,5 @@
 {
-    "name": "dbp/api-starter-bundle",
+    "name": "dbp/relay-template-bundle",
     "type": "symfony-bundle",
     "license": "AGPL-3.0-or-later",
     "require": {
@@ -26,12 +26,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "DBP\\API\\StarterBundle\\": "src/"
+            "Dbp\\Relay\\TemplateBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DBP\\API\\StarterBundle\\Tests\\": "tests/"
+            "Dbp\\Relay\\TemplateBundle\\Tests\\": "tests/"
         }
     },
     "config": {

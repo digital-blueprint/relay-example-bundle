@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DBP\API\StarterBundle;
+namespace Dbp\Relay\TemplateBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class DbpStarterBundle extends Bundle
+class DbpRelayTemplateBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
