@@ -10,6 +10,14 @@ features:
 * An example entity
 * Various HTTP methods implemented for that entity
 
+## TL;DR
+
+The quickst way to make use of this template bundle is to feed your desired names
+to one command and generate a ready-to-use bundle with the correct naming.
+
+See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/api-docs/naming.html#generate-dbp-symfony-bundle) for more information.
+
+
 ## Using the Bundle as a Template
 
 * Copy the repo contents
