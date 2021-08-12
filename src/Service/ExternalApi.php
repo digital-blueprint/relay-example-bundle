@@ -12,6 +12,9 @@ class ExternalApi implements PlaceProviderInterface
 
     public function __construct(MyCustomService $service)
     {
+        // Make phpstan happy
+        $service = $service;
+
         $this->places = [];
         $place1 = new Place();
         $place1->setIdentifier('graz');
