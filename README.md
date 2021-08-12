@@ -25,7 +25,7 @@ features:
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/dbp-api/dbp-relay-template-bundle.git"
+            "url": "git@gitlab.tugraz.at:dbp/relay/dbp-relay-template-bundle.git"
         }
     ],
 ```
