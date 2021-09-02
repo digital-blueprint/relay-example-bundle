@@ -12,7 +12,7 @@ features:
 
 ## TL;DR
 
-The quickst way to make use of this template bundle is to feed your desired names
+The quickest way to make use of this template bundle is to feed your desired names
 to one command and generate a ready-to-use bundle with the correct naming.
 
 See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/api-docs/naming.html#generate-dbp-symfony-bundle) for more information.
