@@ -9,8 +9,9 @@ use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use Dbp\Relay\CoreBundle\Helpers\ArrayFullPaginator;
 use Dbp\Relay\TemplateBundle\Entity\Place;
 use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-final class PlaceCollectionDataProvider implements CollectionDataProviderInterface, RestrictedDataProviderInterface
+final class PlaceCollectionDataProvider extends AbstractController implements CollectionDataProviderInterface, RestrictedDataProviderInterface
 {
     private $api;
 

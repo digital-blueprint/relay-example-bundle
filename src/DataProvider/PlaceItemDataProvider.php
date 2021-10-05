@@ -8,8 +8,9 @@ use ApiPlatform\Core\DataProvider\ItemDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use Dbp\Relay\TemplateBundle\Entity\Place;
 use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-final class PlaceItemDataProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
+final class PlaceItemDataProvider extends AbstractController implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
     private $api;
 

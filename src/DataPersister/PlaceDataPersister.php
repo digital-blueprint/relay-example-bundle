@@ -7,8 +7,9 @@ namespace Dbp\Relay\TemplateBundle\DataPersister;
 use ApiPlatform\Core\DataPersister\DataPersisterInterface;
 use Dbp\Relay\TemplateBundle\Entity\Place;
 use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class PlaceDataPersister implements DataPersisterInterface
+class PlaceDataPersister extends AbstractController implements DataPersisterInterface
 {
     private $api;
 
