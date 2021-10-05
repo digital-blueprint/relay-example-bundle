@@ -5,7 +5,7 @@ services:
 
   Dbp\Relay\TemplateBundle\Controller\:
     resource: '../../Controller'
-    tags: ['controller.service_arguments']
+    autoconfigure: true
     autowire: true
 
   Dbp\Relay\TemplateBundle\DataPersister\:
@@ -13,13 +13,10 @@ services:
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\DataProvider\PlaceCollectionDataProvider:
-    tags: [{ name: 'api_platform.collection_data_provider'}]
+  Dbp\Relay\TemplateBundle\DataProvider\:
+    resource: '../../DataProvider'
     autowire: true
-
-  Dbp\Relay\TemplateBundle\DataProvider\PlaceItemDataProvider:
-    tags: ['api_platform.item_data_provider']
-    autowire: true
+    autoconfigure: true
 
   Dbp\Relay\TemplateBundle\Service\ExternalApi:
     autowire: true
