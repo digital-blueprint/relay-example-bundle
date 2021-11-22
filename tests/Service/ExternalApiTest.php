@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\TemplateBundle\Tests\Service;
 
-use Dbp\Relay\TemplateBundle\Service\ExternalApi;
 use Dbp\Relay\TemplateBundle\Service\MyCustomService;
+use Dbp\Relay\TemplateBundle\Service\ExternalApi;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ExternalApiTest extends WebTestCase
