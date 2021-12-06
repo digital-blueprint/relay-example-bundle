@@ -6,10 +6,10 @@ namespace Dbp\Relay\TemplateBundle\Service;
 
 class MyCustomService
 {
-    private $token;
+    private $someConfig;
 
-    public function __construct(string $token)
+    public function __construct(string $someConfig)
     {
-        $this->token = $token;
+        $this->$someConfig = $someConfig;
     }
 }

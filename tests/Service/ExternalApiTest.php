@@ -14,7 +14,7 @@ class ExternalApiTest extends WebTestCase
 
     protected function setUp(): void
     {
-        $service = new MyCustomService('secret-test-custom');
+        $service = new MyCustomService('test-42');
         $this->api = new ExternalApi($service);
     }
 

@@ -65,8 +65,8 @@ content:
 
 ```yaml
 dbp_relay_template:
-  secret_token: 42
-  # secret_token: '%env(SECRET_TOKEN)%'
+  example_config: 42
+  # example_config: '%env(EXAMPLE_CONFIG)%'
 ```
 
 The value gets read in `DbpRelayTemplateExtension` and passed when creating the

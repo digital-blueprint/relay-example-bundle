@@ -24,7 +24,7 @@ class DbpRelayTemplateExtension extends ConfigurableExtension
 
         // Inject the config value into the MyCustomService service
         $definition = $container->getDefinition('Dbp\Relay\TemplateBundle\Service\MyCustomService');
-        $definition->addArgument($mergedConfig['secret_token']);
+        $definition->addArgument($mergedConfig['example_config']);
     }
 
     private function extendArrayParameter(ContainerBuilder $container, string $parameter, array $values)

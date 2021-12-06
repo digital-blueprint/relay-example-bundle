@@ -15,7 +15,7 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
-                ->scalarNode('secret_token')
+                ->scalarNode('example_config')
                     ->defaultValue('42')
                 ->end()
             ->end();
