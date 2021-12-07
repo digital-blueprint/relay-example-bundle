@@ -17,38 +17,39 @@ to one command and generate a ready-to-use bundle with the correct naming.
 
 See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/dev-guide/relay/naming/#generate-dbp-symfony-bundle) for more information.
 
-
 ## Using the Bundle as a Template
 
 * Copy the repo contents
-* Adjust the package name in `composer.json`
+* Adjust the package name in `composer.json`, in this example we'll pretend you named your bundle `dbp/relay-your-bundle`
 * Invent a new PHP namespace and adjust it in all PHP files
 * Rename `src/DbpRelayTemplateBundle` and `DependencyInjection/DbpRelayTemplateExtension` to match the new project name
 
 ## Integration into the API Server
 
-* Add the repository to your composer.json:
+* Push your bundle on a git server, in this example we'll use `git@gitlab.tugraz.at:dbp/relay/dbp-relay-your-bundle.git`
+* Add the repository to your composer.json (as soon as you published your bundle to [Packagist](https://packagist.org/)
+  you can remove that block again):
 
 ```json
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.tugraz.at:dbp/relay/dbp-relay-template-bundle.git"
+            "url": "git@gitlab.tugraz.at:dbp/relay/dbp-relay-your-bundle.git"
         }
     ],
 ```
 
 * Add the bundle package as a dependency:
 
-```
-composer require dbp/relay-template-bundle=dev-main
+```bash
+composer require dbp/relay-your-bundle=dev-main
 ```
 
 * Add the bundle to your `config/bundles.php`:
 
 ```php
 ...
-Dbp\Relay\TemplateBundle\DbpRelayTemplateBundle::class => ['all' => true],
+Dbp\Relay\YourBundle\DbpRelayYourBundle::class => ['all' => true],
 DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 ];
 ```
@@ -57,8 +58,8 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 
 ## Configuration
 
-The bundle has a `secret_token` configuration value that you can specify in your
-app, either by hardcoding it, or by referencing an environment variable.
+The bundle has a `example_config` configuration value that you can specify in your
+app, either by hard-coding it, or by referencing an environment variable.
 
 For this create `config/packages/dbp_relay_template.yaml` in the app with the following
 content:
@@ -69,11 +70,10 @@ dbp_relay_template:
   # example_config: '%env(EXAMPLE_CONFIG)%'
 ```
 
-The value gets read in `DbpRelayTemplateExtension` and passed when creating the
-`MyCustomService` service.
+The value gets read in `DbpRelayTemplateExtension` (your extension will be named differently)
+and passed when creating the `MyCustomService` service.
 
-For more info on bundle configuration see
-https://symfony.com/doc/current/bundles/configuration.html
+For more info on bundle configuration see [Symfony bundles configuration](https://symfony.com/doc/current/bundles/configuration.html).
 
 ## Development & Testing
 
@@ -87,6 +87,6 @@ https://symfony.com/doc/current/bundles/configuration.html
 Don't forget you need to pull down your dependencies in your main application if you are installing packages in a bundle.
 
 ```bash
-# updates and installs dependencies from dbp/relay-template-bundle
-composer update dbp/relay-template-bundle
+# updates and installs dependencies from dbp/relay-your-bundle
+composer update dbp/relay-your-bundle
 ```
