@@ -23,7 +23,7 @@ class PlaceDataPersister extends AbstractController implements DataPersisterInte
         return $data instanceof Place;
     }
 
-    public function persist($data)
+    public function persist($data): void
     {
         // TODO
     }
