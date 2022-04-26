@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Dbp\Relay\TemplateBundle\DependencyInjection;
+namespace Dbp\Relay\ExampleBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
-class DbpRelayTemplateExtension extends ConfigurableExtension
+class DbpRelayExampleExtension extends ConfigurableExtension
 {
     public function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
@@ -23,7 +23,7 @@ class DbpRelayTemplateExtension extends ConfigurableExtension
         $loader->load('services.yaml');
 
         // Inject the config value into the MyCustomService service
-        $definition = $container->getDefinition('Dbp\Relay\TemplateBundle\Service\MyCustomService');
+        $definition = $container->getDefinition('Dbp\Relay\ExampleBundle\Service\MyCustomService');
         $definition->addArgument($mergedConfig['example_config']);
     }
 

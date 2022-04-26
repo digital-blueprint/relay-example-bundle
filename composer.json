@@ -1,6 +1,6 @@
 {
-    "name": "dbp/relay-template-bundle",
-    "description": "A template bundle for the Relay API gateway",
+    "name": "dbp/relay-example-bundle",
+    "description": "An example bundle for the Relay API gateway",
     "type": "symfony-bundle",
     "license": "AGPL-3.0-or-later",
     "require": {
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Dbp\\Relay\\TemplateBundle\\": "src/"
+            "Dbp\\Relay\\ExampleBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dbp\\Relay\\TemplateBundle\\Tests\\": "tests/"
+            "Dbp\\Relay\\ExampleBundle\\Tests\\": "tests/"
         }
     },
     "config": {

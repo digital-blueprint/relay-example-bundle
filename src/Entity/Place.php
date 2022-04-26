@@ -2,61 +2,61 @@
 
 declare(strict_types=1);
 
-namespace Dbp\Relay\TemplateBundle\Entity;
+namespace Dbp\Relay\ExampleBundle\Entity;
 
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
-use Dbp\Relay\TemplateBundle\Controller\LoggedInOnly;
+use Dbp\Relay\ExampleBundle\Controller\LoggedInOnly;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ApiResource(
  *     collectionOperations={
  *         "get" = {
- *             "path" = "/template/places",
+ *             "path" = "/example/places",
  *             "openapi_context" = {
- *                 "tags" = {"Template"},
+ *                 "tags" = {"Example"},
  *             },
  *         }
  *     },
  *     itemOperations={
  *         "get" = {
- *             "path" = "/template/places/{identifier}",
+ *             "path" = "/example/places/{identifier}",
  *             "openapi_context" = {
- *                 "tags" = {"Template"},
+ *                 "tags" = {"Example"},
  *             },
  *         },
  *         "put" = {
- *             "path" = "/template/places/{identifier}",
+ *             "path" = "/example/places/{identifier}",
  *             "openapi_context" = {
- *                 "tags" = {"Template"},
+ *                 "tags" = {"Example"},
  *             },
  *         },
  *         "delete" = {
- *             "path" = "/template/places/{identifier}",
+ *             "path" = "/example/places/{identifier}",
  *             "openapi_context" = {
- *                 "tags" = {"Template"},
+ *                 "tags" = {"Example"},
  *             },
  *         },
  *         "loggedin_only" = {
  *             "security" = "is_granted('IS_AUTHENTICATED_FULLY')",
  *             "method" = "GET",
- *             "path" = "/template/places/{identifier}/loggedin-only",
+ *             "path" = "/example/places/{identifier}/loggedin-only",
  *             "controller" = LoggedInOnly::class,
  *             "openapi_context" = {
  *                 "summary" = "Only works when logged in.",
- *                 "tags" = {"Template"},
+ *                 "tags" = {"Example"},
  *             },
  *         }
  *     },
  *     iri="https://schema.org/Place",
- *     shortName="TemplatePlace",
+ *     shortName="ExamplePlace",
  *     normalizationContext={
- *         "groups" = {"TemplatePlace:output"},
+ *         "groups" = {"ExamplePlace:output"},
  *         "jsonld_embed_context" = true
  *     },
  *     denormalizationContext={
- *         "groups" = {"TemplatePlace:input"},
+ *         "groups" = {"ExamplePlace:input"},
  *         "jsonld_embed_context" = true
  *     }
  * )
@@ -70,7 +70,7 @@ class Place
 
     /**
      * @ApiProperty(iri="https://schema.org/name")
-     * @Groups({"TemplatePlace:output", "TemplatePlace:input"})
+     * @Groups({"ExamplePlace:output", "ExamplePlace:input"})
      *
      * @var string
      */

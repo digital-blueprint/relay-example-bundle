@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Dbp\Relay\TemplateBundle\DataPersister;
+namespace Dbp\Relay\ExampleBundle\DataPersister;
 
 use ApiPlatform\Core\DataPersister\DataPersisterInterface;
-use Dbp\Relay\TemplateBundle\Entity\Place;
-use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
+use Dbp\Relay\ExampleBundle\Entity\Place;
+use Dbp\Relay\ExampleBundle\Service\PlaceProviderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class PlaceDataPersister extends AbstractController implements DataPersisterInterface

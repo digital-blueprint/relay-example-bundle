@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Dbp\Relay\TemplateBundle\Controller;
+namespace Dbp\Relay\ExampleBundle\Controller;
 
-use Dbp\Relay\TemplateBundle\Entity\Place;
+use Dbp\Relay\ExampleBundle\Entity\Place;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Dbp\Relay\TemplateBundle\DataProvider;
+namespace Dbp\Relay\ExampleBundle\DataProvider;
 
 use ApiPlatform\Core\DataProvider\ItemDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
-use Dbp\Relay\TemplateBundle\Entity\Place;
-use Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface;
+use Dbp\Relay\ExampleBundle\Entity\Place;
+use Dbp\Relay\ExampleBundle\Service\PlaceProviderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 final class PlaceItemDataProvider extends AbstractController implements ItemDataProviderInterface, RestrictedDataProviderInterface

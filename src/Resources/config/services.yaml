@@ -1,30 +1,30 @@
 services:
-  Dbp\Relay\TemplateBundle\Command\TestCommand:
+  Dbp\Relay\ExampleBundle\Command\TestCommand:
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\Controller\:
+  Dbp\Relay\ExampleBundle\Controller\:
     resource: '../../Controller'
     autoconfigure: true
     autowire: true
 
-  Dbp\Relay\TemplateBundle\DataPersister\:
+  Dbp\Relay\ExampleBundle\DataPersister\:
     resource: '../../DataPersister'
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\DataProvider\:
+  Dbp\Relay\ExampleBundle\DataProvider\:
     resource: '../../DataProvider'
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\Service\ExternalApi:
+  Dbp\Relay\ExampleBundle\Service\ExternalApi:
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\Service\MyCustomService:
+  Dbp\Relay\ExampleBundle\Service\MyCustomService:
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\TemplateBundle\Service\PlaceProviderInterface:
-    '@Dbp\Relay\TemplateBundle\Service\ExternalApi'
+  Dbp\Relay\ExampleBundle\Service\PlaceProviderInterface:
+    '@Dbp\Relay\ExampleBundle\Service\ExternalApi'
