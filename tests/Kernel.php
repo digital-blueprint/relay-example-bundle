@@ -47,7 +47,7 @@ class Kernel extends BaseKernel
             'secret' => '',
         ]);
 
-        $container->extension('dbp_relay_template', [
+        $container->extension('dbp_relay_example', [
             'example_config' => 'test-42',
         ]);
     }

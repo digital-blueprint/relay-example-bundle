@@ -1,6 +1,6 @@
-# Relay Template Bundle
+# Relay Example Bundle
 
-This Symfony bundle can be used as a template for creating new bundles for the
+This Symfony bundle can be used as an example for creating new bundles for the
 DBP Relay project.
 
 When including this bundle into your API server it will gain the following
@@ -12,17 +12,17 @@ features:
 
 ## TL;DR
 
-The quickest way to make use of this template bundle is to feed your desired names
+The quickest way to make use of this example bundle is to feed your desired names
 to one command and generate a ready-to-use bundle with the correct naming.
 
 See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/dev-guide/relay/naming/#generate-dbp-symfony-bundle) for more information.
 
-## Using the Bundle as a Template
+## Using the Bundle as an example
 
 * Copy the repo contents
 * Adjust the package name in `composer.json`, in this example we'll pretend you named your bundle `dbp/relay-your-bundle`
 * Invent a new PHP namespace and adjust it in all PHP files
-* Rename `src/DbpRelayTemplateBundle` and `DependencyInjection/DbpRelayTemplateExtension` to match the new project name
+* Rename `src/DbpRelayExampleBundle` and `DependencyInjection/DbpRelayExampleExtension` to match the new project name
 
 ## Integration into the API Server
 
@@ -61,16 +61,16 @@ DBP\API\CoreBundle\DbpCoreBundle::class => ['all' => true],
 The bundle has a `example_config` configuration value that you can specify in your
 app, either by hard-coding it, or by referencing an environment variable.
 
-For this create `config/packages/dbp_relay_template.yaml` in the app with the following
+For this create `config/packages/dbp_relay_example.yaml` in the app with the following
 content:
 
 ```yaml
-dbp_relay_template:
+dbp_relay_example:
   example_config: 42
   # example_config: '%env(EXAMPLE_CONFIG)%'
 ```
 
-The value gets read in `DbpRelayTemplateExtension` (your extension will be named differently)
+The value gets read in `DbpRelayExampleExtension` (your extension will be named differently)
 and passed when creating the `MyCustomService` service.
 
 For more info on bundle configuration see [Symfony bundles configuration](https://symfony.com/doc/current/bundles/configuration.html).

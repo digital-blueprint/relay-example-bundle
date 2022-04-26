@@ -11,7 +11,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('dbp_relay_template');
+        $treeBuilder = new TreeBuilder('dbp_relay_example');
 
         $treeBuilder->getRootNode()
             ->children()
