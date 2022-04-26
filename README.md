@@ -1,5 +1,8 @@
 # Relay Example Bundle
 
+[GitLab](https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle) |
+[Packagist](https://packagist.org/packages/dbp/relay-example-bundle)
+
 This Symfony bundle can be used as an example for creating new bundles for the
 DBP Relay project.
 
