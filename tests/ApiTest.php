@@ -9,6 +9,16 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ApiTest extends ApiTestCase
 {
+    /**
+     * You can test some basic api functionality here.
+     *
+     * @return void
+     *
+     * @throws \Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface
+     * @throws \Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface
+     * @throws \Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface
+     * @throws \Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface
+     */
     public function testBasics()
     {
         $client = self::createClient();
@@ -31,6 +41,11 @@ class ApiTest extends ApiTestCase
         $this->assertSame('foo', json_decode($response->getContent(), true)['name']);
     }
 
+    /**
+     * Test if you can access the api without a user.
+     *
+     * @throws \Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface
+     */
     public function testNoAuth()
     {
         $client = self::createClient();

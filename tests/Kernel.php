@@ -47,6 +47,7 @@ class Kernel extends BaseKernel
             'secret' => '',
         ]);
 
+        // TODO: Inject settings from dbp_relay_example.yaml
         $container->extension('dbp_relay_example', [
             'example_config' => 'test-42',
         ]);

@@ -11,4 +11,6 @@ interface PlaceProviderInterface
     public function getPlaceById(string $identifier): ?Place;
 
     public function getPlaces(): array;
+
+    public function storePlace(Place $place): void;
 }

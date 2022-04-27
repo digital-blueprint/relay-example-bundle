@@ -9,6 +9,11 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * This is an example command.
+ * You can execute it with "php bin/console dbp:my-custom-command my-argument".
+ * Change "my-custom-command" to a more meaningful name in $defaultName.
+ */
 class TestCommand extends Command
 {
     protected static $defaultName = 'dbp:my-custom-command';

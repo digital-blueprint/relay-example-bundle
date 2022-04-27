@@ -10,6 +10,9 @@ use Dbp\Relay\ExampleBundle\Entity\Place;
 use Dbp\Relay\ExampleBundle\Service\PlaceProviderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+/**
+ * This is an example of an item data provider that uses the PlaceProviderInterface to get the data for a single item.
+ */
 final class PlaceItemDataProvider extends AbstractController implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
     private $api;

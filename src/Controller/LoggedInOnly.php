@@ -8,6 +8,9 @@ use Dbp\Relay\ExampleBundle\Entity\Place;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * This is an example controller that only allows logged-in users to access it.
+ */
 class LoggedInOnly extends AbstractController
 {
     public function __invoke(Place $data, Request $request): Place
