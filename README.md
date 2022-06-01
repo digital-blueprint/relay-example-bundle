@@ -18,7 +18,7 @@ features:
 The quickest way to make use of this example bundle is to feed your desired names
 to one command and generate a ready-to-use bundle with the correct naming.
 
-See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/dev-guide/relay/naming/#generate-dbp-symfony-bundle) for more information.
+See [Generate DBP Symfony bundle](https://dbp-demo.tugraz.at/handbook/relay/dev/naming/#generate-dbp-symfony-bundle) for more information.
 
 ## Using the Bundle as an example
 
