@@ -10,6 +10,6 @@ class MyCustomService
 
     public function __construct(string $someConfig)
     {
-        $this->$someConfig = $someConfig;
+        $this->someConfig = $someConfig;
     }
 }
