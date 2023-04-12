@@ -1,6 +1,6 @@
 # Relay Example Bundle
 
-[GitLab](https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle) |
+[GitHub](https://github.com/digital-blueprint/relay-example-bundle) |
 [Packagist](https://packagist.org/packages/dbp/relay-example-bundle)
 
 The goal of this bundle is to include a wide variety of features that you might
