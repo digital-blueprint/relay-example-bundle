@@ -1,3 +1,7 @@
+# 0.2.4
+
+* Update to the new api-platform metadata system
+
 # 0.2.1
 
 * Add a health check example
