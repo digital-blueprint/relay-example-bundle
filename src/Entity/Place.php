@@ -52,12 +52,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     iri="https://schema.org/Place",
  *     shortName="ExamplePlace",
  *     normalizationContext={
- *         "groups" = {"ExamplePlace:output"},
- *         "jsonld_embed_context" = true
+ *         "groups" = {"ExamplePlace:output"}
  *     },
  *     denormalizationContext={
- *         "groups" = {"ExamplePlace:input"},
- *         "jsonld_embed_context" = true
+ *         "groups" = {"ExamplePlace:input"}
  *     }
  * )
  */
