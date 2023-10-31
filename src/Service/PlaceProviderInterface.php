@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Service;
 
-use Dbp\Relay\ExampleBundle\Entity\Place;
+use Dbp\Relay\ExampleBundle\ApiPlatform\Place;
 
 interface PlaceProviderInterface
 {

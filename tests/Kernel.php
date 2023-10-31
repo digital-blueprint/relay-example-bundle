@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Tests;
 
-use ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle;
+use ApiPlatform\Symfony\Bundle\ApiPlatformBundle;
 use Dbp\Relay\CoreBundle\DbpRelayCoreBundle;
 use Dbp\Relay\ExampleBundle\DbpRelayExampleBundle;
 use Nelmio\CorsBundle\NelmioCorsBundle;
@@ -16,7 +16,7 @@ use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
-use Symfony\Component\Routing\RouteCollectionBuilder;
+use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 class Kernel extends BaseKernel
 {
@@ -34,7 +34,7 @@ class Kernel extends BaseKernel
         yield new DbpRelayCoreBundle();
     }
 
-    protected function configureRoutes(RouteCollectionBuilder $routes)
+    protected function configureRoutes(RoutingConfigurator $routes)
     {
         $routes->import('@DbpRelayCoreBundle/Resources/config/routing.yaml');
     }
@@ -50,6 +50,10 @@ class Kernel extends BaseKernel
         // TODO: Inject settings from dbp_relay_example.yaml
         $container->extension('dbp_relay_example', [
             'example_config' => 'test-42',
+        ]);
+
+        $container->extension('api_platform', [
+            'metadata_backward_compatibility_layer' => false,
         ]);
     }
 }

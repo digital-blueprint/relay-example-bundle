@@ -4,20 +4,13 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Tests;
 
-use ApiPlatform\Core\Bridge\Symfony\Bundle\Test\ApiTestCase;
+use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
 use Symfony\Component\HttpFoundation\Response;
 
 class ApiTest extends ApiTestCase
 {
     /**
      * You can test some basic api functionality here.
-     *
-     * @return void
-     *
-     * @throws \Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface
-     * @throws \Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface
-     * @throws \Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface
-     * @throws \Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface
      */
     public function testBasics()
     {
@@ -43,8 +36,6 @@ class ApiTest extends ApiTestCase
 
     /**
      * Test if you can access the api without a user.
-     *
-     * @throws \Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface
      */
     public function testNoAuth()
     {

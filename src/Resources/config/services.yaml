@@ -3,20 +3,10 @@ services:
     autowire: true
     autoconfigure: true
 
-  Dbp\Relay\ExampleBundle\Controller\:
-    resource: '../../Controller'
+  Dbp\Relay\ExampleBundle\ApiPlatform\:
+    resource: '../../ApiPlatform'
     autoconfigure: true
     autowire: true
-
-  Dbp\Relay\ExampleBundle\DataPersister\:
-    resource: '../../DataPersister'
-    autowire: true
-    autoconfigure: true
-
-  Dbp\Relay\ExampleBundle\DataProvider\:
-    resource: '../../DataProvider'
-    autowire: true
-    autoconfigure: true
 
   Dbp\Relay\ExampleBundle\Service\ExternalApi:
     autowire: true

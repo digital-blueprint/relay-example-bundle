@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Service;
 
-use Dbp\Relay\ExampleBundle\Entity\Place;
+use Dbp\Relay\ExampleBundle\ApiPlatform\Place;
 
 /**
  * Class ExternalApi.
@@ -15,11 +15,13 @@ class ExternalApi implements PlaceProviderInterface
 {
     private $places;
 
+    /**
+     * @var MyCustomService
+     */
+    private $service;
+
     public function __construct(MyCustomService $service)
     {
-        // Make phpstan happy
-        $service = $service;
-
         // TODO: Fetch data from external service
         $this->places = [];
         $place1 = new Place();
@@ -32,6 +34,7 @@ class ExternalApi implements PlaceProviderInterface
 
         $this->places[] = $place1;
         $this->places[] = $place2;
+        $this->service = $service;
     }
 
     public function getPlaceById(string $identifier): ?Place
