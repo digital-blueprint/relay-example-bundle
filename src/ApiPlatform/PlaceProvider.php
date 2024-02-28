@@ -14,6 +14,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * This is an example of a  provider that uses the PlaceProviderInterface to get the data for a collection of items.
+ *
+ * @implements ProviderInterface<Place>
  */
 final class PlaceProvider extends AbstractController implements ProviderInterface
 {
