@@ -6,7 +6,7 @@
     "require": {
         "php": ">=8.1",
         "ext-json": "*",
-        "api-platform/core": "^2.7",
+        "api-platform/core": "^3.0",
         "dbp/relay-core-bundle": "^0.1.127",
         "symfony/config": "^5.4",
         "symfony/console": "^5.4",
