@@ -16,15 +16,14 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class TestCommand extends Command
 {
-    protected static $defaultName = 'dbp:my-custom-command';
-
     public function __construct()
     {
         parent::__construct();
     }
 
-    protected function configure()
+    protected function configure(): void
     {
+        $this->setName('dbp:my-custom-command');
         $this->addArgument('argument', InputArgument::REQUIRED, 'Example.');
         $this->setDescription('Hey there!');
     }

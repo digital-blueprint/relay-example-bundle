@@ -1,3 +1,7 @@
+# 0.2.7
+
+* Add support for Symfony 6
+
 # 0.2.6
 
 * Drop support for PHP 7.4/8.0
