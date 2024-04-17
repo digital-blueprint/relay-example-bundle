@@ -26,7 +26,7 @@ class ApiTest extends ApiTestCase
 
         $response = $client->request('PUT', '/example/places/graz', [
             'headers' => [
-                'Content-Type' => 'application/json',
+                'Content-Type' => 'application/ld+json',
             ],
             'body' => json_encode(['name' => 'foo']),
         ]);
