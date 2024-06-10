@@ -8,16 +8,13 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 class Place
 {
-    /**
-     * @Groups({"ExamplePlace:output"})
-     */
+    #[Groups(['ExamplePlace:output'])]
     private $identifier;
 
     /**
-     * @Groups({"ExamplePlace:output", "ExamplePlace:input"})
-     *
      * @var string
      */
+    #[Groups(['ExamplePlace:output', 'ExamplePlace:input'])]
     private $name;
 
     public function getName(): string
