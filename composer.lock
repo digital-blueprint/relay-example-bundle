@@ -229,16 +229,16 @@
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.191",
+            "version": "v0.1.192",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "bbc78e054ef3a350a3bbfb0a944dc0955ad43304"
+                "reference": "5d6d69da4d953ebbd1460367faf76475c5efb2c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/bbc78e054ef3a350a3bbfb0a944dc0955ad43304",
-                "reference": "bbc78e054ef3a350a3bbfb0a944dc0955ad43304",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/5d6d69da4d953ebbd1460367faf76475c5efb2c8",
+                "reference": "5d6d69da4d953ebbd1460367faf76475c5efb2c8",
                 "shasum": ""
             },
             "require": {
@@ -324,9 +324,9 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.191"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.192"
             },
-            "time": "2024-11-12T14:03:25+00:00"
+            "time": "2024-11-18T08:11:19+00:00"
         },
         {
             "name": "doctrine/inflector",
