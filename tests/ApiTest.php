@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Tests;
 
-use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
+use Dbp\Relay\CoreBundle\TestUtils\AbstractApiTest;
 use Symfony\Component\HttpFoundation\Response;
 
-class ApiTest extends ApiTestCase
+class ApiTest extends AbstractApiTest
 {
     /**
      * You can test some basic api functionality here.
