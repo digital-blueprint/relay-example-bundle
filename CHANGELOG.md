@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.10
+
+* Add support for Symfony 7
+* Drop support for api-platform 3
+
 ## 0.2.9
 
 * Add support for api-platform 4.1 / drop for <3.4
