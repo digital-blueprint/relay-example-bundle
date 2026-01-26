@@ -44,11 +44,10 @@ final class PlaceProvider extends AbstractController implements ProviderInterfac
             }
 
             return new PartialPaginator($this->api->getPlaces(), $page, $perPage);
-        } else {
-            $id = $uriVariables['identifier'];
-            assert(is_string($id));
-
-            return $this->api->getPlaceById($id);
         }
+        $id = $uriVariables['identifier'];
+        assert(is_string($id));
+
+        return $this->api->getPlaceById($id);
     }
 }
