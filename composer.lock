@@ -682,16 +682,16 @@
         },
         {
             "name": "api-platform/state",
-            "version": "v4.3.17",
+            "version": "v4.3.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/state.git",
-                "reference": "2a9a18aad1c3363a32381f8c6e21c41334e23b88"
+                "reference": "7a50bbef781fc0e98df30d0d99b630d1d27c5ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/state/zipball/2a9a18aad1c3363a32381f8c6e21c41334e23b88",
-                "reference": "2a9a18aad1c3363a32381f8c6e21c41334e23b88",
+                "url": "https://api.github.com/repos/api-platform/state/zipball/7a50bbef781fc0e98df30d0d99b630d1d27c5ab6",
+                "reference": "7a50bbef781fc0e98df30d0d99b630d1d27c5ab6",
                 "shasum": ""
             },
             "require": {
@@ -773,9 +773,9 @@
                 "swagger"
             ],
             "support": {
-                "source": "https://github.com/api-platform/state/tree/v4.3.17"
+                "source": "https://github.com/api-platform/state/tree/v4.3.18"
             },
-            "time": "2026-07-11T07:03:31+00:00"
+            "time": "2026-08-16T07:58:36+00:00"
         },
         {
             "name": "api-platform/symfony",
