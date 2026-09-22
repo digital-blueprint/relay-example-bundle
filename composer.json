@@ -9,7 +9,7 @@
         "api-platform/metadata": "^4.1",
         "api-platform/state": "^4.1",
         "api-platform/openapi": "^4.1",
-        "dbp/relay-core-bundle": "^0.1.210",
+        "dbp/relay-core-bundle": "^0.1.251",
         "symfony/config": "^6.4 || ^7.4",
         "symfony/console": "^6.4 || ^7.4",
         "symfony/dependency-injection": "^6.4 || ^7.4",

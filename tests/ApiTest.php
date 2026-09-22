@@ -4,17 +4,23 @@ declare(strict_types=1);
 
 namespace Dbp\Relay\ExampleBundle\Tests;
 
-use Dbp\Relay\CoreBundle\TestUtils\AbstractApiTest;
+use Dbp\Relay\CoreBundle\TestUtils\ApiTestCase;
 use Symfony\Component\HttpFoundation\Response;
 
-class ApiTest extends AbstractApiTest
+class ApiTest extends ApiTestCase
 {
+    public function setUp(): void
+    {
+        $this->createTestClient();
+        $this->login();
+    }
+
     /**
      * You can test some basic api functionality here.
      */
     public function testBasics()
     {
-        $client = self::createClient();
+        $client = $this->testClient;
         $response = $client->request('GET', '/example/places');
         $this->assertSame(Response::HTTP_OK, $response->getStatusCode());
 
@@ -39,8 +45,8 @@ class ApiTest extends AbstractApiTest
      */
     public function testNoAuth()
     {
-        $client = self::createClient();
-        $response = $client->request('GET', '/example/places/graz/loggedin-only');
+        $client = $this->testClient;
+        $response = $client->request('GET', '/example/places/graz/loggedin-only', token: null);
         $this->assertSame(Response::HTTP_UNAUTHORIZED, $response->getStatusCode());
     }
 }
