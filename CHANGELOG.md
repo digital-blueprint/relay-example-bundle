@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.11
+
+* Dependency updates
+
 ## 0.2.10
 
 * Add support for Symfony 7
