@@ -1,5 +1,9 @@
 # Changelog
 
+# 0.2.12
+
+* Add support for api-platform 5
+
 ## 0.2.11
 
 * Dependency updates
