@@ -400,16 +400,16 @@
         },
         {
             "name": "api-platform/metadata",
-            "version": "v4.4.8",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/metadata.git",
-                "reference": "95e567a2793ee93935e11a1b42a8bb5873992470"
+                "reference": "b9dcf7cee8c42d487ca586a6b7305f9a35d9d887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/metadata/zipball/95e567a2793ee93935e11a1b42a8bb5873992470",
-                "reference": "95e567a2793ee93935e11a1b42a8bb5873992470",
+                "url": "https://api.github.com/repos/api-platform/metadata/zipball/b9dcf7cee8c42d487ca586a6b7305f9a35d9d887",
+                "reference": "b9dcf7cee8c42d487ca586a6b7305f9a35d9d887",
                 "shasum": ""
             },
             "require": {
@@ -492,14 +492,14 @@
                 "swagger"
             ],
             "support": {
-                "source": "https://github.com/api-platform/metadata/tree/v4.4.8"
+                "source": "https://github.com/api-platform/metadata/tree/v4.4.10"
             },
-            "time": "2026-09-29T20:09:09+00:00",
-            "published-time": "2026-11-13T12:44:47+00:00"
+            "time": "2026-11-16T09:45:22+00:00",
+            "published-time": "2026-11-20T11:58:28+00:00"
         },
         {
             "name": "api-platform/openapi",
-            "version": "v4.4.8",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/openapi.git",
@@ -584,10 +584,10 @@
                 "swagger"
             ],
             "support": {
-                "source": "https://github.com/api-platform/openapi/tree/v4.4.8"
+                "source": "https://github.com/api-platform/openapi/tree/v4.4.10"
             },
             "time": "2026-10-19T07:40:02+00:00",
-            "published-time": "2026-11-13T12:44:54+00:00"
+            "published-time": "2026-11-20T11:58:21+00:00"
         },
         {
             "name": "api-platform/serializer",
@@ -685,16 +685,16 @@
         },
         {
             "name": "api-platform/state",
-            "version": "v4.4.8",
+            "version": "v4.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/state.git",
-                "reference": "98ac5e0667b2d6b27c4a22ae19edde6e084614b9"
+                "reference": "b29b0283493c7633f4498496ea81fee2357b2146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/state/zipball/98ac5e0667b2d6b27c4a22ae19edde6e084614b9",
-                "reference": "98ac5e0667b2d6b27c4a22ae19edde6e084614b9",
+                "url": "https://api.github.com/repos/api-platform/state/zipball/b29b0283493c7633f4498496ea81fee2357b2146",
+                "reference": "b29b0283493c7633f4498496ea81fee2357b2146",
                 "shasum": ""
             },
             "require": {
@@ -779,10 +779,10 @@
                 "swagger"
             ],
             "support": {
-                "source": "https://github.com/api-platform/state/tree/v4.4.8"
+                "source": "https://github.com/api-platform/state/tree/v4.4.10"
             },
-            "time": "2026-10-13T13:41:08+00:00",
-            "published-time": "2026-11-13T12:44:25+00:00"
+            "time": "2026-11-16T09:45:22+00:00",
+            "published-time": "2026-11-20T11:58:17+00:00"
         },
         {
             "name": "api-platform/symfony",
